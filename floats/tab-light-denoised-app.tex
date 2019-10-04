@@ -1,0 +1,53 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment}  & \textbf{$[t_{min}, t_{max}]$ ($s$)}  & \textbf{Preprocessing}               & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\     
+    \hline \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, denoised}& Bayes                 &  $48.33 \pm 2.81\%$   & $-0.0 \pm 0.11$\\   
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, denoised}& Percp. A              &  $47.59 \pm 3.83\%$   & $-0.05 \pm 0.08$\\  
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, denoised}& Percp. B              &  $47.73 \pm 4.07\%$   & $-0.05 \pm 0.08$\\
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, denoised}& CNN C                 &  $47.84 \pm 4.93\%$   & $-0.04 \pm 0.1$\\   
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, denoised}& CNN D*                &  $49.88 \pm 4.26\%$   & $0.0 \pm 0.09$\\   
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, denoised}& CNN E                 &  $45.78 \pm 3.02\%$   & $-0.08 \pm 0.06$\\ 
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, denoised}& CNN F*                &  $49.03 \pm 4.81\%$   & $-0.02 \pm 0.1$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, denoised}& Bayes                 &  $49.72 \pm 4.71\%$   & $-0.03 \pm 0.09$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, denoised}& Percp. A              &  $49.88 \pm 5.19\%$   & $0.0 \pm 0.1$\\   
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, denoised}& Percp. B              &  $52.1 \pm 6.61\%$    & $0.04 \pm 0.13$\\ 
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, denoised}& CNN C                 &  $54.74 \pm 5.54\%$   & $0.09 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, denoised}& CNN D                 &  $53.5 \pm 5.93\%$    & $0.07 \pm 0.12$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, denoised}& CNN E                 &  $49.08 \pm 5.28\%$   & $0.02 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, denoised}& CNN F                 &  $56.52 \pm 4.0\%$    & $0.13 \pm 0.08$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, denoised}& Bayes                 &  $46.21 \pm 7.32\%$   & $-0.06 \pm 0.16$\\ 
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, denoised}& Percp. A              &  $52.32 \pm 11.34\%$  & $0.05 \pm 0.23$\\ 
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, denoised}& Percp. B              &  $53.03 \pm 8.21\%$   & $0.06 \pm 0.16$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, denoised}& CNN C                 &  $54.74 \pm 11.81\%$  & $0.09 \pm 0.24$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, denoised}& CNN D                 &  $51.24 \pm 16.08\%$  & $0.02 \pm 0.32$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, denoised}& CNN E                 &  $49.84 \pm 13.77\%$  & $0.0 \pm 0.28$\\    
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, denoised}& CNN F                 &  $57.72 \pm 13.97\%$  & $0.15 \pm 0.28$\\   
+    \hline
+\end{tabular}
+}
+\caption{Baseline lights.}
+\label{tab:lights-denoised-app}
+\end{table}

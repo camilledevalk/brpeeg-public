@@ -1,0 +1,42 @@
+\begin{table}[!htb]
+    \begin{subtable}{.5\linewidth}
+      \centering
+      \captionsetup{width = 0.9\linewidth}
+        \begin{tabular}{@{}cc|cc@{}}
+            \multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{2}{c}{\textit{Predicted}} \\ 
+            \multicolumn{1}{c}{} & 
+            \multicolumn{1}{c|}{} & 
+            \multicolumn{1}{c}{\textbf{Blank}} & 
+            \multicolumn{1}{c}{\textbf{Blink}} \\ 
+            \cline{2-4}
+            \multirow[c]{2}{*}{\rotatebox[origin=tr]{90}{\textit{Actual}}}
+            & \textbf{Blank}  & 0 & 4   \\[1.5ex]
+            & \textbf{Blink}  & 1 & 7 \\ 
+            \cline{2-4}
+        \end{tabular}
+        \vspace{0.2cm}
+        \caption{ Accuracy = 58 \%, MCC = 0.17}
+        \label{tab:perceptronA-cf-blinks-non-prep}
+    \end{subtable}%
+    \begin{subtable}{.5\linewidth}
+      \centering
+      \captionsetup{width = 0.9\linewidth}
+        \begin{tabular}{@{}cc|cc@{}}
+            \multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{2}{c}{\textit{Predicted}} \\ 
+            \multicolumn{1}{c}{} & 
+            \multicolumn{1}{c|}{} & 
+            \multicolumn{1}{c}{\textbf{Blank}} & 
+            \multicolumn{1}{c}{\textbf{Blink}} \\ 
+            \cline{2-4}
+            \multirow[c]{2}{*}{\rotatebox[origin=tr]{90}{\textit{Actual}}}
+            & \textbf{Blank}  & 3 & 1   \\[1.5ex]
+            & \textbf{Blink}  & 1 & 7 \\ 
+            \cline{2-4}
+        \end{tabular}
+        \vspace{0.2cm}
+        \caption{Accuracy = 83 \%, MCC = 0.67}
+        \label{tab:perceptronB-cf-blinks-non-prep}
+    \end{subtable}
+    \caption{The results of the Perceptron classifiers \textbf{A} and \textbf{B} (defined \vpageref{itemize:perceptrons}). The data was \textbf{not preprocessed}.}
+    \label{tab:blinks-perceptron-cf-non-prep}
+\end{table}

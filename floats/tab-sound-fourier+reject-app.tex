@@ -1,0 +1,51 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} & \textbf{$[t_{min}, t_{max}]$ ($s$)}           & \textbf{Preprocessing}        & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\     
+    \hline \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject, Fourier& Bayes                 &  $50.33 \pm 4.84\%$   & $0.01 \pm 0.1$\\   
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject, Fourier& Percp. A              &  $55.28 \pm 5.44\%$   & $0.11 \pm 0.11$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject, Fourier& Percp. B              &  $55.32 \pm 5.87\%$   & $0.11 \pm 0.12$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject, Fourier& CNN G                 &  $56.66 \pm 3.72\%$   & $0.13 \pm 0.07$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject, Fourier& CNN H                 &  $55.21 \pm 4.69\%$   & $0.10 \pm 0.09$\\  
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& Bayes                 &  $49.64 \pm 9.69\%$   & $0.02 \pm 0.24$\\  
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& Percp. A              &  $50.84 \pm 8.22\%$   & $0.02 \pm 0.17$\\  
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& Percp. B              &  $51.74 \pm 8.34\%$   & $0.03 \pm 0.18$\\   
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& CNN G                 &  $52.63 \pm 10.47\%$  & $0.05 \pm 0.21$\\   
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& CNN H                 &  $54.96 \pm 13.75\%$  & $0.1 \pm 0.28$\\   
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject, Fourier& Bayes                 &  $48.33 \pm 17.4\%$   & $-0.05 \pm 0.35$\\ 
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject, Fourier& Percp. A              &  $52.08 \pm 20.85\%$  & $0.04 \pm 0.47$\\   
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject, Fourier& Percp. B              &  $48.75 \pm 8.75\%$   & $-0.02 \pm 0.22$\\   
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject, Fourier& CNN G                 &  $51.67 \pm 32.02\%$  & $0.03 \pm 0.64$\\   
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject, Fourier& CNN H                 &  $63.33 \pm 19.44\%$  & $0.27 \pm 0.39$\\   
+    \hline \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& Bayes                 &  $48.13 \pm 3.94\%$   & $-0.05 \pm 0.1$\\  
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& Percp. A              &  $44.9 \pm 6.18\%$   & $-0.11 \pm 0.12$\\  
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& Percp. B              &  $49.87 \pm 0.4\%$   & $0.0 \pm 0.01$\\   
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& CNN G                 &  $46.67 \pm 5.13\%$  & $-0.07 \pm 0.1$\\   
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject, Fourier& CNN H                 &  $45.48 \pm 11.11\%$  & $-0.09 \pm 0.22$\\   
+    \hline
+\end{tabular}
+}
+\caption{Fourier.}
+\label{tab:sound-fourier+reject-app}
+\end{table}

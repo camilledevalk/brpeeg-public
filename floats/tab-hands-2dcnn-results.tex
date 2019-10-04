@@ -1,0 +1,16 @@
+\begin{table}[h]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} &  \textbf{Classes} & \textbf{Preprocessing} & \textbf{Classifier} & \textbf{Accuracy} & \textbf{MCC}\\    \hline \hline
+    Hands-small & \textit{left}, \textit{right} & CQ, norm., drop chs.   & CNN E &   $92.0 \pm 2.4\%$ & $0.84 \pm 0.05$\\   \hline
+    Hands-small & \textit{left}, \textit{right} & + ICA & CNN E &   $91.5 \pm 3.0\%$ & $0.83 \pm 0.06$\\   \hline
+    Hands-small & \textit{left}, \textit{right} & all & CNN E &   $92.5 \pm 2.3\%$ & $0.85 \pm 0.05$\\   \hline
+    Hands-small & \textit{left}, \textit{right} & CQ, norm., drop chs.   & CNN F &   $91.3 \pm 4.5\%$ & $0.83 \pm 0.09$\\   \hline
+    Hands-small & \textit{left}, \textit{right} & + ICA & CNN F &   $93.3 \pm 2.8\%$ & $0.87 \pm 0.06$\\   \hline
+    Hands-small & \textit{left}, \textit{right} & all & CNN F &   $90.3 \pm 5.2\%$ & $0.81 \pm 0.10$\\   \hline
+\end{tabular}
+}
+\caption{Performance of the 2D convolutional networks \textbf{E} and \textbf{F} (defined on page \pageref{itemize:2dCNNs}).}
+\label{tab:hands-2dcnn-results}
+\end{table}

@@ -1,0 +1,112 @@
+\begin{comment}
+%sorted
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} &  \textbf{Classes}                             & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\
+    \hline \hline
+    Blinks              & \textit{blink}, \textit{blank}                & -                         & Percp. B              &  $90.1 \pm 7.6 \%$    & $0.80 \pm 0.15$\\
+    \hline
+    Blinks              & \textit{blink}, \textit{blank}                & CQ, norm.                 & Percp. A              &  $88.4 \pm 7.7 \%$    & $0.77 \pm 0.15$\\
+    \hline
+    Blinks              & \textit{blink}, \textit{blank}                & CQ, norm.                 & Percp. B              &  $83.7 \pm 9.2 \%$    & $0.67 \pm 0.18$\\
+    \hline 
+    Blinks              & \textit{blink}, \textit{blank}                & -                         & Bayes                 &  $78.4 \pm 10 \%$     & $0.55 \pm 0.22$\\
+    \hline
+    Blinks              & \textit{blink}, \textit{blank}                & CQ, norm.                 & Bayes                 &  $72.2 \pm 8.9 \%$    & $0.50 \pm 0.14$\\
+    \hline
+    Blinks              & \textit{blink}, \textit{blank}                & -                         & Percp. A              &  $66.7 \pm 3.1 \%$    & $0.33 \pm 0.06$\\
+    \hline \hline
+    Hands-small         & \textit{left}, \textit{right}                 & -                         & Percp. B              &  $94.5 \pm 2.8\%$     & $0.89 \pm 0.06$\\
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. B              &  $93.4 \pm 3.1 \%$    & $0.87 \pm 0.06$\\
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. A              &  $93.1 \pm 2.7 \%$    & $0.86 \pm 0.05$\\
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & -                         & Bayes                 &  $92.4 \pm 6.9\%$     & $0.85 \pm 0.13$\\
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & -                         & Percp. A              &  $92.2 \pm 4.9\%$     & $0.84 \pm 0.10$\\
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Bayes                 &  $89.6 \pm 7.7 \%$    & $0.79 \pm 0.15$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. A              &  $51.8 \pm 4.9 \%$    & $0.04 \pm 0.10$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & -                         & Percp. B              &  $34.0 \pm 2.8\%$     & $0.03 \pm 0.04$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & -                         & Percp. B              &  $51.4 \pm 3.7\%$     & $0.03 \pm 0.07$\\
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Percp. B              &  $50.5 \pm 2.2 \%$    & $0.01 \pm 0.04$\\
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & -                         & Percp. B              &  $50.5 \pm 2.7\%$     & $0.01 \pm 0.05$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & -                         & Percp. A              &  $33.3 \pm 2.5\%$     & $0.0 \pm 0.03$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Percp. A              &  $34.2 \pm 2.7 \%$    & $0.0 \pm 0.03$\\
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & -                         & Percp. A              &  $49.8 \pm 2.1\%$     & $0.0 \pm 0.04$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & -                         & Percp. A              &  $50.1 \pm 2.3\%$     & $0.0 \pm 0.05$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Percp. B              &  $33.7 \pm 0.1 \%$    & $0.0 \pm 0.0$\\
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Percp. A              &  $49.7 \pm 3.4 \%$    & $-0.01 \pm 0.07$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. B              &  $49.6 \pm 3.6 \%$    & $-0.01 \pm 0.07$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Bayes                 &  $49.4 \pm 2.7 \%$    & $-0.01 \pm 0.06$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Bayes                 &  $32.3 \pm 2.5 \%$    & $-0.02 \pm 0.04$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & -                         & Bayes                 &  $49.5 \pm 4.7\%$     & $-0.02 \pm 0.10$\\
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & -                         & Bayes                 &  $31.5 \pm 3.3\%$     & $-0.03 \pm 0.05$\\
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & -                         & Bayes                 &  $48.2 \pm 2.7\%$     & $-0.04 \pm 0.06$\\
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Bayes                 &  $48.6 \pm 2.2 \%$    & $-0.03 \pm 0.05$\\
+    \hline
+    
+\end{tabular}
+}
+\caption{The baseline measurement for the moving hands experiment, sorted on MCC. Note that random guessing will result in a MCC around 0, an accuracy of 33 \% for 3 classses and 50 \% for 2 classes.}
+\label{tab:hands-baseline-app}
+\end{table}
+\end{comment}
+
+%unsorted
+\begin{table}[h]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} &  \textbf{Classes}                             & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\    \hline \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & -                         & Bayes                 &  $31.5 \pm 3.3\%$     & $-0.03 \pm 0.05$\\\hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Bayes                 &  $32.3 \pm 2.5 \%$    & $-0.02 \pm 0.04$\\\hline
+    Hands               & \textit{left}, \textit{right}                 & -                         & Bayes                 &  $49.5 \pm 4.7\%$     & $-0.02 \pm 0.10$\\\hline
+    Hands               & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Bayes                 &  $49.4 \pm 2.7 \%$    & $-0.01 \pm 0.06$\\\hline
+    Hands-small         & \textit{left}, \textit{right}                 & -                         & Bayes                 &  $92.4 \pm 6.9\%$     & $0.85 \pm 0.13$\\\hline
+    Hands-small         & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Bayes                 &  $89.6 \pm 7.7 \%$    & $0.79 \pm 0.15$\\\hline
+    Hands               & \textit{move}, \textit{blank}                 & -                         & Bayes                 &  $48.2 \pm 2.7\%$     & $-0.04 \pm 0.06$\\\hline
+    Hands               & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Bayes                 &  $48.6 \pm 2.2 \%$    & $-0.03 \pm 0.05$\\\hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & -                         & Percp. A              &  $33.3 \pm 2.5\%$     & $0.0 \pm 0.03$\\  \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Percp. A              &  $34.2 \pm 2.7 \%$    & $0.0 \pm 0.03$\\  \hline
+    Hands               & \textit{left}, \textit{right}                 & -                         & Percp. A              &  $50.1 \pm 2.3\%$     & $0.0 \pm 0.05$\\  \hline
+    Hands               & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. A              &  $51.8 \pm 4.9 \%$    &  $0.04 \pm 0.1$\\\hline
+    Hands-small         & \textit{left}, \textit{right}                 & -                         & Percp. A              &  $92.2 \pm 4.9\%$     & $0.84 \pm 0.10$\\\hline
+    Hands-small         & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. A              &  $93.1 \pm 2.7 \%$    & $0.86 \pm 0.05$\\\hline
+    Hands               & \textit{move}, \textit{blank}                 & -                         & Percp. A              &  $49.8 \pm 2.1\%$     & $0.0 \pm 0.04$\\  \hline
+    Hands               & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Percp. A              &  $49.7 \pm 3.4 \%$    & $-0.01 \pm 0.07$\\\hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & -                         & Percp. B              &  $34.0 \pm 2.8\%$     & $0.03 \pm 0.04$\\\hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Percp. B              &  $33.7 \pm 0.1 \%$    & $0.0 \pm 0.0$\\   \hline
+    Hands               & \textit{left}, \textit{right}                 & -                         & Percp. B              &  $51.4 \pm 3.7\%$     & $0.03 \pm 0.07$\\\hline
+    Hands               & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. B              &  $49.6 \pm 3.6 \%$    & $-0.01 \pm 0.07$ \\   \hline
+    Hands-small         & \textit{left}, \textit{right}                 & -                         & Percp. B              &  $94.5 \pm 2.8\%$     & $0.89 \pm 0.06$\\\hline
+    Hands-small         & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. B              &  $93.4 \pm 3.1 \%$    & $0.87 \pm 0.06$\\\hline
+    Hands               & \textit{move}, \textit{blank}                 & -                         & Percp. B              &  $50.5 \pm 2.7\%$     & $0.01 \pm 0.05$\\\hline
+    Hands               & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Percp. B              &  $50.5 \pm 2.2 \%$    & $0.01 \pm 0.04$\\\hline
+    
+\end{tabular}
+}
+\caption{The baseline measurement for the moving hands experiment (figure \ref{fig:hands-baseline-results}). Note that random guessing will result in a MCC around 0, an accuracy of 33 \% for 3 classses and 50 \% for 2 classes. See page \pageref{itemize:perceptrons} for the definitions of the perceptrons.}
+\label{tab:hands-baseline-app}
+\end{table}

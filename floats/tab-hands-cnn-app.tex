@@ -1,0 +1,43 @@
+\begin{table}[h]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} &  \textbf{Classes}                             & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\  
+    \hline \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.     & CNN C                 &  $34.9 \pm 3.2 \%$    & $0.01 \pm 0.03$\\  
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & CNN C                 &  $34.4 \pm 2.1 \%$    & $-0.01 \pm 0.03$\\ 
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & CNN C                 &  $52.4 \pm 3.9 \%$    & $0.05 \pm 0.08$\\  
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & + ICA                     & CNN C                 &  $48.3 \pm 5.0 \%$    & $-0.04 \pm 0.1$\\  
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & CNN C                 &  $91.9 \pm 3.5 \%$    & $0.84 \pm 0.07$\\ 
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & + ICA                     & CNN C                 &  $90.2 \pm 3.6 \%$    & $0.80 \pm 0.07$\\ 
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & CNN C                 &  $50.7 \pm 2.6 \%$    & $0.01 \pm 0.05$\\  
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & + ICA                     & CNN C                 &  $49.7 \pm 1.7 \%$    & $-0.01 \pm 0.03$\\ 
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & CNN D                 &  $32.5 \pm 2.3 \%$    & $-0.0 \pm 0.06$\\ 
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & CNN D                 &  $33.6 \pm 4.0 \%$    & $-0.0 \pm 0.03$\\  
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & CNN D                 &  $48.6 \pm 2.5 \%$    & $-0.03 \pm 0.05$\\ 
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & + ICA                     & CNN D                 &  $49.5 \pm 6.4 \%$    & $-0.01 \pm 0.13$\\ 
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & CNN D*                &  $91.0 \pm 3.3 \%$    & $0.82 \pm 0.07$\\  
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & + ICA                     & CNN D*                &  $92.0 \pm 5.1 \%$    & $0.84 \pm 0.1$\\  
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & CNN D                 &  $49.6 \pm 3.7 \%$    & $-0.01 \pm 0.07$\\ 
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & + ICA                     & CNN D                 &  $51.4 \pm 3.5 \%$    & $0.03 \pm 0.07$\\  
+    \hline
+\end{tabular}
+}
+\caption{Performace of the CNN's (figure \ref{fig:hands-cnn-results}).}% Preprocessing `all' means: apply ICA,  CQ weighing, normalisation, drop channels and drop noisy examples (maximum value above $100 \mu V$).}
+\label{tab:hands-cnn-app}
+\end{table}

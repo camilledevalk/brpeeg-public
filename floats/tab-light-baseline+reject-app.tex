@@ -1,0 +1,53 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment}  & \textbf{$[t_{min}, t_{max}]$ ($s$)}           & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\     
+    \hline \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject    & Bayes                 &  $47.88 \pm 3.55\%$   & $-0.06 \pm 0.1$\\  
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject    & Percp. A              &  $54.99 \pm 3.71\%$   & $0.10 \pm 0.07$\\  
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject    & Percp. B              &  $56.36 \pm 5.73\%$   & $0.13 \pm 0.11$\\  
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject    & CNN C                 &  $48.66 \pm 4.32\%$   & $-0.03 \pm 0.09$\\ 
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject    & CNN D*                &  $51.48 \pm 4.28\%$   & $0.03 \pm 0.09$\\  
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject    & CNN E                 &  $53.40 \pm 2.47\%$   & $0.07 \pm 0.05$\\  
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject    & CNN F*                &  $50.28 \pm 4.37\%$   & $0.01 \pm 0.09$\\   
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject    & Bayes                 &  $50.39 \pm 5.92\%$   & $0.0 \pm 0.15$\\   
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject    & Percp. A              &  $53.16 \pm 7.51\%$   & $0.06 \pm 0.15$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject    & Percp. B              &  $56.01 \pm 5.17\%$   & $0.12 \pm 0.1$\\   
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject    & CNN C                 &  $51.76 \pm 9.43\%$   & $0.04 \pm 0.19$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject    & CNN D                 &  $51.09 \pm 7.38\%$   & $0.02 \pm 0.15$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject    & CNN E                 &  $48.33 \pm 7.13\%$   & $-0.03 \pm 0.14$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject    & CNN F                 &  $51.01 \pm 6.60\%$    & $0.02 \pm 0.13$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject    & Bayes                 &  $64.70 \pm 19.16\%$  & $0.31 \pm 0.42$\\   
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject    & Percp. A              &  $63.75 \pm 13.28\%$  & $0.28 \pm 0.27$\\   
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject    & Percp. B              &  $63.63 \pm 11.25\%$  & $0.27 \pm 0.22$\\   
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject    & CNN C                 &  $61.04 \pm 16.46\%$  & $0.22 \pm 0.33$\\   
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject    & CNN D                 &  $58.04 \pm 19.66\%$  & $0.16 \pm 0.39$\\   
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject    & CNN E                 &  $63.63 \pm 16.72\%$  & $0.28 \pm 0.34$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject    & CNN F                 &  $55.24 \pm 17.9\%$   & $0.11 \pm 0.36$\\  
+    \hline
+\end{tabular}
+}
+\caption{Baseline lights.}
+\label{tab:lights-baseline+reject-app}
+\end{table}

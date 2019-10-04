@@ -1,0 +1,41 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} & \textbf{$[t_{min}, t_{max}]$ ($s$)}           & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\
+    \hline \hline
+    Music               & [0,1]                                         & CQ, Norm. ICA, Fourier    & Bayes                 &  $51.5 \pm 2.6\%$     & $0.05 \pm 0.08$\\
+    \hline
+    Music               & [0,1]                                         & CQ, Norm. ICA, Fourier    & Percp. A              &  $51.1 \pm 2.0\%$     & $0.02 \pm 0.04$\\
+    \hline
+    Music               & [0,1]                                         & CQ, Norm. ICA, Fourier    & Percp. B              &  $50.0 \pm 0.0\%$     & $0.0 \pm 0.0$\\
+    \hline
+    Music               & [0,1]                                         & CQ, Norm. ICA, Fourier    & CNN G                 &  $51.2 \pm 4.1\%$     & $0.02 \pm 0.08$\\
+    \hline
+    Music               & [0,1]                                         & CQ, Norm. ICA, Fourier    & CNN H                 &  $52.6 \pm 1.8\%$     & $0.05 \pm 0.04$\\
+    \hline
+    Music               & [0,2]                                         & CQ, Norm. ICA, Fourier    & Bayes                 &  $51.8 \pm 1.9\%$     & $0.06 \pm 0.06$\\
+    \hline
+    Music               & [0,2]                                         & CQ, Norm. ICA, Fourier    & Percp. A              &  $48.6 \pm 3.2\%$     & $-0.03 \pm 0.06$\\
+    \hline
+    Music               & [0,2]                                         & CQ, Norm. ICA, Fourier    & Percp. B              &  $50.2 \pm 0.5\%$     & $0.0 \pm 0.01$\\
+    \hline
+    Music               & [0,2]                                         & CQ, Norm. ICA, Fourier    & CNN G                 &  $50.3 \pm 4.3\%$     & $0.01 \pm 0.09$\\
+    \hline
+    Music               & [0,2]                                         & CQ, Norm. ICA, Fourier    & CNN H                 &  $51.7 \pm 5.6\%$     & $0.03 \pm 0.11$\\
+    \hline
+    Music               & [0,10]                                        & CQ, Norm. ICA, Fourier    & Bayes                 &  $53.3 \pm 9.5\%$     & $0.08 \pm 0.25$\\
+    \hline
+    Music               & [0,10]                                        & CQ, Norm. ICA, Fourier    & Percp. A              &  $54.8 \pm 8.2\%$     & $0.10 \pm 0.16$\\
+    \hline
+    Music               & [0,10]                                        & CQ, Norm. ICA, Fourier    & Percp. B              &  $50.0 \pm 0.0\%$     & $0.0 \pm 0.0$\\
+    \hline
+    Music               & [0,10]                                        & CQ, Norm. ICA, Fourier    & CNN G                 &  $56.6 \pm 8.2\%$     & $0.13 \pm 0.16$\\
+    \hline
+    Music               & [0,10]                                        & CQ, Norm. ICA, Fourier    & CNN H                 &  $47.8 \pm 6.8\%$     & $-0.04 \pm 0.13$\\
+    \hline
+\end{tabular}
+}
+\caption{Fourier.}
+\label{tab:sound-fourier-app}
+\end{table}

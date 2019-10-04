@@ -1,0 +1,53 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment}  & \textbf{$[t_{min}, t_{max}]$ ($s$)}  & \textbf{Preprocessing}                        & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\     
+    \hline \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & Bayes                 &  $47.74 \pm 6.06\%$   & $-0.07 \pm 0.16$\\  
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & Percp. A              &  $52.36 \pm 5.46\%$   & $0.05 \pm 0.11$\\  
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & Percp. B              &  $52.06 \pm 8.3\%$    & $0.04 \pm 0.178$\\ 
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN C                 &  $53.28 \pm 6.24\%$   & $0.07 \pm 0.12$\\  
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN D*                &  $51.58 \pm 6.68\%$   & $0.03 \pm 0.13$\\  
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN E                 &  $51.08 \pm 7.74\%$   & $0.02 \pm 0.15$\\ 
+    \hline
+    Light               & [0,1]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN F*                &  $48.49 \pm 9.35\%$   & $-0.03 \pm 0.19$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & Bayes                 &  $49.72 \pm 4.71\%$   & $-0.03 \pm 0.09$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & Percp. A              &  $49.88 \pm 5.19\%$   & $0.0 \pm 0.1$\\   
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & Percp. B              &  $52.1 \pm 6.61\%$    & $0.04 \pm 0.13$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN C                 &  $54.74 \pm 5.54\%$   & $0.09 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN D                 &  $53.5 \pm 5.93\%$    & $0.07 \pm 0.12$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN E                 &  $49.08 \pm 5.28\%$   & $0.02 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN F                 &  $56.52 \pm 4.0\%$    & $0.13 \pm 0.08$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, reject, denoised} & Bayes                 &  $59.94 \pm 20.35\%$  & $0.22 \pm 0.44$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, reject, denoised} & Percp. A              &  $55.69 \pm 19.53\%$  & $0.12 \pm 0.39$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, reject, denoised} & Percp. B              &  $64.26 \pm 11.34\%$  & $0.29 \pm 0.23$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN C                 &  $51.49 \pm 16.64\%$  & $0.03 \pm 0.34$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN D                 &  $50.77 \pm 17.11\%$  & $0.02 \pm 0.34$\\  
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN E                 &  $57.2 \pm 19.81\%$   & $0.14 \pm 0.4$\\   
+    \hline
+    Light               & [0,10]                               & \scriptsize{CQ, norm., ICA, reject, denoised} & CNN F                 &  $53.25 \pm 12.92\%$  & $0.07 \pm 0.26$\\   
+    \hline
+\end{tabular}
+}
+\caption{Baseline lights.}
+\label{tab:lights-denoised+reject-app}
+\end{table}

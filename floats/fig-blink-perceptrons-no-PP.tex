@@ -1,0 +1,28 @@
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.5\linewidth}
+        \centering
+        \captionsetup{width = 0.9\linewidth}
+        \includegraphics[width = \textwidth]{figures/blink-perceptrons-loss-no-PP.png}
+        \caption{\textbf{Binary cross-entropy loss}}
+        \label{fig:blink-perceptrons-loss-no-PP}
+    \end{subfigure}%
+    \begin{subfigure}{0.5\linewidth}
+        \centering
+        \captionsetup{width = 0.9\linewidth}
+        \includegraphics[width = \textwidth]{figures/blink-perceptrons-acc-no-PP.png}
+        \caption{\textbf{Accuracy}}
+        \label{fig:blink-perceptrons-acc-no-PP}
+    \end{subfigure}%
+    \\
+    \begin{subfigure}{0.5\linewidth}
+        \captionsetup{width = 0.9\linewidth}
+        \includegraphics[width = \textwidth]{figures/blink-perceptrons-mcc-no-PP.png}
+        \caption{\textbf{MCC}}
+        \label{fig:/blink-perceptrons-mcc-no-PP}
+    \end{subfigure}%
+    \begin{minipage}{0.5\linewidth}
+        \caption{The training on the \textbf{blinks} experiment with perceptrons defined as \textbf{A} and \textbf{B} \vpageref{itemize:perceptrons}. The data was \textbf{not preprocessed}. Judging from the loss, for perceptron B overfitting is happening.}
+        \label{fig:blink-perceptrons-no-PP}
+    \end{minipage}
+\end{figure}

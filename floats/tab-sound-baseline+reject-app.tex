@@ -1,0 +1,100 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} & \textbf{$[t_{min}, t_{max}]$ ($s$)}        & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\     
+    \hline \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & Bayes                 &  $47.39 \pm 5.71\%$   & $-0.05 \pm 0.13$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & Percp. A              &  $51.13 \pm 3.76\%$   & $0.02 \pm 0.08$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & Percp. B              &  $50.25 \pm 4.4\%$    & $0.01 \pm 0.09$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & CNN C                 &  $51.72 \pm 4.27\%$   & $0.03 \pm 0.09$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & CNN D*                &  $51.2 \pm 6.84\%$    & $0.02 \pm 0.14$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & CNN E                 &  $52.61 \pm 3.94\%$   & $0.05 \pm 0.08$\\  
+    \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & CNN F*                &  $50.21 \pm 5.5\%$    & $0.0 \pm 0.11$\\  
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & Bayes                 &  $44.61 \pm 8.77\%$   & $-0.11 \pm 0.2$\\  
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & Percp. A              &  $49.14 \pm 5.42\%$   & $-0.02 \pm 0.11$\\   
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & Percp. B              &  $50.44 \pm 8.65\%$   & $0.01 \pm 0.17$\\   
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & CNN C                 &  $44.75 \pm 10.28\%$  & $-0.11 \pm 0.21$\\  
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & CNN D                 &  $45.44 \pm 10.31\%$  & $-0.09 \pm 0.21$\\  
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & CNN E                 &  $49.34 \pm 8.84\%$   & $-0.01 \pm 0.18$\\  
+    \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & CNN F                 &  $44.35 \pm 10.98\%$  & $-0.11 \pm 0.22$\\  
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & Bayes                 &  $38.33 \pm 25.87\%$  & $-0.3 \pm 0.46$\\   
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & Percp. A              &  $37.92 \pm 26.64\%$  & $-0.26 \pm 0.55$\\  
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & Percp. B              &  $45.83 \pm 33.18\%$  & $-0.08 \pm 0.67$\\  
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & CNN C                 &  $46.67 \pm 27.69\%$  & $-0.07 \pm 0.55$\\  
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & CNN D                 &  $51.25 \pm 27.52\%$  & $0.02 \pm 0.56$\\  
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & CNN E                 &  $36.67 \pm 18.71\%$  & $-0.30 \pm 0.39$\\   
+    \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & CNN F                 &  $43.75 \pm 17.0\%$   & $-0.12 \pm 0.37$\\ 
+    \hline \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & Bayes                 &  $48.86 \pm 5.29\%$   & $-0.03 \pm 0.15$\\ 
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & Percp. A              &  $52.16 \pm 5.14\%$   & $0.04 \pm 0.1$\\   
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & Percp. B              &  $50.28 \pm 7.06\%$   & $0.01 \pm 0.14$\\  
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & CNN C                 &  $53.52 \pm 8.7\%$    & $0.07 \pm 0.17$\\  
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & CNN D                 &  $49.65 \pm 8.0\%$    & $-0.01 \pm 0.16$\\  
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & CNN E                 &  $49.73 \pm 5.92\%$   & $-0.01 \pm 0.12$\\  
+    \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & CNN F                 &  $52.01 \pm 6.21\%$   & $0.04 \pm 0.12$\\   
+    \hline
+\end{tabular}
+}
+\caption{The baseline measurement for the sound experiments.}
+\label{tab:sound-baseline+reject-app}
+\end{table}
+
+
+\begin{comment}
+%empty table sound
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & Bayes                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & Bayes                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & Bayes                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & Percp. A              &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & Percp. A              &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & Percp. A              &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & Percp. B              &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & Percp. B              &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & Percp. B              &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & CNN C                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & CNN C                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & CNN C                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & CNN D*                &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & CNN D                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & CNN D                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & CNN E                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & CNN E                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & CNN E                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,1]                                         & CQ, norm., ICA, reject     & CNN F*                &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,2]                                         & CQ, norm., ICA, reject     & CNN F                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Music               & [0,10]                                        & CQ, norm., ICA, reject     & CNN F                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & Bayes                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & Percp. A              &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & Percp. B              &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & CNN C                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & CNN D                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & CNN E                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+    Beeps               & [0,2]                                         & CQ, norm., ICA, reject     & CNN F                 &  $xx.x \pm x.x\%$     & $0.xx \pm 0.xx$\\     \hline
+\end{comment}

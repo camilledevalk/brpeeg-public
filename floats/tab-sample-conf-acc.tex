@@ -1,0 +1,18 @@
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}cc|cc@{}}
+    \multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{2}{c}{\textit{Predicted}} \\ 
+    \multicolumn{1}{c}{} & 
+    \multicolumn{1}{c|}{} & 
+    \multicolumn{1}{c}{\textbf{Blank}} & 
+    \multicolumn{1}{c}{\textbf{Blink}} \\ 
+    \cline{2-4}
+    \multirow[c]{2}{*}{\rotatebox[origin=tr]{90}{\textit{Actual}}}
+    & \textbf{Blank}  & 0 & 50   \\[1.5ex]
+    & \textbf{Blink}  & 0 & 50 \\ 
+    \cline{2-4}
+\end{tabular}
+\vspace{0.2cm}
+\caption{A confusion matrix with a deceiving accuracy. Accuracy is 50 \% in this case, but it is obtained by only guessing one class.}
+\label{tab:sample-conf-acc}
+\end{table}

@@ -1,0 +1,53 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment}  & \textbf{$[t_{min}, t_{max}]$ ($s$)}           & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\     
+    \hline \hline
+    Light               & [0,1]                                         & CQ, norm., ICA            & Bayes                 &  $48.23 \pm 2.74\%$   & $48.23 \pm 2.74$\\ 
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA            & Percp. A              &  $49.04 \pm 3.29\%$   & $-0.02 \pm 0.07$\\ 
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA            & Percp. B              &  $48.57 \pm 5.03\%$   & $-0.03 \pm 0.1$\\  
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA            & CNN C                 &  $47.64 \pm 2.49\%$   & $-0.05 \pm 0.05$\\ 
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA            & CNN D*                &  $47.90 \pm 2.68\%$   & $-0.04 \pm 0.05$\\ 
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA            & CNN E                 &  $47.18 \pm 3.87\%$   & $-0.06 \pm 0.08$\\ 
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA            & CNN F*                &  $51.06 \pm 5.6\%$    & $0.02 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA            & Bayes                 &  $52.73 \pm 3.66\%$   & $0.02 \pm 0.12$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA            & Percp. A              &  $54.32 \pm 4.91\%$   & $0.09 \pm 0.1$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA            & Percp. B              &  $53.72 \pm 6.39\%$   & $0.07 \pm 0.13$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA            & CNN C                 &  $53.76 \pm 6.37\%$   & $0.08 \pm 0.13$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA            & CNN D                 &  $53.00 \pm 5.3\%$    & $0.06 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA            & CNN E                 &  $50.91 \pm 4.9\%$    & $0.02 \pm 0.1$\\   
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA            & CNN F                 &  $55.02 \pm 5.55\%$   & $0.1 \pm 0.11$\\   
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA            & Bayes                 &  $39.95 \pm 11.47\%$  & $-0.21 \pm 0.25$\\ 
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA            & Percp. A              &  $56.68 \pm 13.43\%$  & $0.13 \pm 0.27$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA            & Percp. B              &  $64.33 \pm 14.43\%$  & $0.29 \pm 0.29$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA            & CNN C                 &  $57.50 \pm 8.8\%$    & $0.15 \pm 0.18$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA            & CNN D                 &  $54.15 \pm 20.26\%$  & $0.08 \pm 0.41$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA            & CNN E                 &  $53.18 \pm 9.99\%$   & $0.06 \pm 0.2$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA            & CNN F                 &  $56.57 \pm 15.17\%$  & $0.13 \pm 0.3$\\  
+    \hline
+\end{tabular}
+}
+\caption{Baseline lights.}
+\label{tab:lights-baseline-app}
+\end{table}

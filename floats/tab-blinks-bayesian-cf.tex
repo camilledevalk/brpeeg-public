@@ -1,0 +1,44 @@
+\begin{table}[h]
+    \begin{subtable}{.5\linewidth}
+      \centering
+      \captionsetup{width = 0.9\linewidth}
+        \begin{tabular}{@{}cc|cc@{}}
+            \multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{2}{c}{\textit{Predicted}} \\ 
+            \multicolumn{1}{c}{} & 
+            \multicolumn{1}{c|}{} & 
+            \multicolumn{1}{c}{\textbf{Blank}} & 
+            \multicolumn{1}{c}{\textbf{Blink}} \\ 
+            \cline{2-4}
+            \multirow[c]{2}{*}{\rotatebox[origin=tr]{90}{\textit{Actual}}}
+            & \textbf{Blank}  & 3 & 1   \\[1.5ex]
+            & \textbf{Blink}  & 1 & 7 \\ 
+            \cline{2-4}
+        \end{tabular}
+        \vspace{0.2cm}
+        \caption{Data \textbf{not preprocessed}. MCC = 0.67, accuracy = 83 \%.}
+        \label{tab:blinks-bayesian-cf-no-prep}
+        \vspace{\baselineskip}
+    \end{subtable}%
+    \begin{subtable}{.5\linewidth}
+      \centering
+      \captionsetup{width = 0.9\linewidth}
+        \begin{tabular}{@{}cc|cc@{}}
+            \multicolumn{1}{c}{} &\multicolumn{1}{c}{} &\multicolumn{2}{c}{\textit{Predicted}} \\ 
+            \multicolumn{1}{c}{} & 
+            \multicolumn{1}{c|}{} & 
+            \multicolumn{1}{c}{\textbf{Blank}} & 
+            \multicolumn{1}{c}{\textbf{Blink}} \\ 
+            \cline{2-4}
+            \multirow[c]{2}{*}{\rotatebox[origin=tr]{90}{\textit{Actual}}}
+            & \textbf{Blank}  & 3 & 1   \\[1.5ex]
+            & \textbf{Blink}  & 1 & 7   \\ 
+            \cline{2-4}
+        \end{tabular}
+        \vspace{0.2cm}
+        \caption{Data \textbf{preprocessed}; normalised and weighted according to CQ. MCC = 0.67, accuracy = 83 \%.}
+        \label{tab:blinks-bayesian-cf-prep}
+    \end{subtable}
+    \vspace{0.2cm}
+    \caption{The results of the \textbf{Bayesian} classifier. It performs already really well on not preproccesed data of the blinks experiment. The normalisation does not add anything in the performance.}
+    \label{tab:blinks-bayesian-cf}
+\end{table}

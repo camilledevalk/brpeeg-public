@@ -1,0 +1,41 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} & \textbf{$[t_{min}, t_{max}]$ ($s$)}        & \textbf{Preprocessing}               & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\     
+    \hline \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject, Fourier   & Bayes                 &  $51.34 \pm 1.81\%$   & $0.04 \pm 0.05$\\  
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject, Fourier   & Percp. A              &  $58.22 \pm 2.68\%$   & $0.16 \pm 0.05$\\  
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject, Fourier   & Percp. B              &  $51.59 \pm 4.82\%$   & $0.03 \pm 0.1$\\   
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject, Fourier   & CNN G                 &  $54.66 \pm 7.36\%$   & $0.09 \pm 0.15$\\ 
+    \hline
+    Light               & [0,1]                                         & CQ, norm., ICA, reject, Fourier   & CNN H                 &  $54.14 \pm 5.38\%$   & $0.08 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject, Fourier   & Bayes                 &  $51.73 \pm 5.34\%$   & $0.05 \pm 0.15$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject, Fourier   & Percp. A              &  $60.76 \pm 5.65\%$   & $0.22 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject, Fourier   & Percp. B              &  $50.0 \pm 0.53\%$    & $-0.01 \pm 0.03$\\ 
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject, Fourier   & CNN G                 &  $60.83 \pm 5.67\%$   & $0.22 \pm 0.11$\\  
+    \hline
+    Light               & [0,2]                                         & CQ, norm., ICA, reject, Fourier   & CNN H                 &  $55.9 \pm 9.21\%$    & $0.12 \pm 0.18$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject, Fourier   & Bayes                 &  $64.23 \pm 15.3\%$   & $0.3 \pm 0.32$\\   
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject, Fourier   & Percp. A              &  $59.88 \pm 12.27\%$  & $0.21 \pm 0.25$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject, Fourier   & Percp. B              &  $50.0 \pm 0.0\%$     & $0.0 \pm 0.0$\\    
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject, Fourier   & CNN G                 &  $61.73 \pm 13.71\%$  & $0.23 \pm 0.28$\\  
+    \hline
+    Light               & [0,10]                                        & CQ, norm., ICA, reject, Fourier   & CNN H                 &  $56.58 \pm 16.99\%$  & $0.13 \pm 0.34$\\   
+    \hline
+\end{tabular}
+}
+\caption{Fourier.}
+\label{tab:light-fourier+reject-app}
+\end{table}

@@ -1,0 +1,43 @@
+\begin{table}[h]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment}     & \textbf{Classes}                              & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy} & \textbf{MCC}\\
+    \hline \hline
+    Hands                   & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & CNN E                 &  $32.9 \pm 4.1\%$ & $-0.0 \pm 0.03$\\
+    \hline
+    Hands                   & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & CNN E                 &  $36.3 \pm 3.1\%$ & $0.03 \pm 0.05$\\
+    \hline
+    Hands                   & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & CNN E                 &  $52.0 \pm 3.0\%$ & $0.04 \pm 0.06$\\
+    \hline
+    Hands                   & \textit{left}, \textit{right}                 & + ICA                     & CNN E                 &  $47.7 \pm 3.9\%$ & $-0.05 \pm 0.08$\\
+    \hline
+    Hands-small             & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & CNN E                 &  $92.0 \pm 2.4\%$ & $0.84 \pm 0.05$\\
+    \hline
+    Hands-small             & \textit{left}, \textit{right}                 & + ICA                     & CNN E                 &  $91.5 \pm 3.0\%$ & $0.83 \pm 0.06$\\
+    \hline
+    Hands                   & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & CNN E                 &  $51.0 \pm 3.5\%$ & $0.02 \pm 0.07$\\
+    \hline
+    Hands                   & \textit{move}, \textit{blank}                 & + ICA                     & CNN E                 &  $49.2 \pm 3.0\%$ & $-0.02 \pm 0.06$\\
+    \hline
+    Hands                   & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & CNN F                 &  $33.7 \pm 0.1\%$ & $0.0 \pm 0.0$\\
+    \hline
+    Hands                   & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & CNN F                 &  $32.0 \pm 2.6\%$ & $-0.0 \pm 0.01$\\
+    \hline
+    Hands                   & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & CNN F                 &  $50.3 \pm 2.2\%$ & $0.01 \pm 0.04$\\
+    \hline
+    Hands                   & \textit{left}, \textit{right}                 & + ICA                     & CNN F                 &  $48.9 \pm 3.5\%$ & $-0.02 \pm 0.07$\\
+    \hline
+    Hands-small             & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & CNN F                 &  $91.3 \pm 4.5\%$ & $0.83 \pm 0.09$\\
+    \hline
+    Hands-small             & \textit{left}, \textit{right}                 & + ICA                     & CNN F                 &  $93.3 \pm 2.8\%$ & $0.87 \pm 0.06$\\
+    \hline
+    Hands                   & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & CNN F                 &  $50.9 \pm 1.8\%$ &  $0.02 \pm 0.04$\\
+    \hline
+    Hands                   & \textit{move}, \textit{blank}                 & + ICA                     & CNN F                 &  $50.6 \pm 1.2\%$ &  $0.01 \pm 0.02$\\
+    \hline
+\end{tabular}
+}
+\caption{Performance of the 2D convolutional networks \textbf{E} and \textbf{F} (defined on page \pageref{itemize:2dCNNs}).}
+\label{tab:hands-2dcnn-app}
+\end{table}

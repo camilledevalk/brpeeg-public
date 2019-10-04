@@ -1,0 +1,14 @@
+\begin{table}[h]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} &  \textbf{Classes} & \textbf{Preprocessing} & \textbf{Classifier} & \textbf{Accuracy} & \textbf{MCC}\\    \hline \hline
+    Hands-small & \textit{left}, \textit{right} & CQ, norm., drop chs. & CNN C &  $91.9 \pm 3.5 \%$ & $0.84 \pm 0.07$\\   \hline
+    Hands-small & \textit{left}, \textit{right} & all & CNN C &   $90.2 \pm 3.6 \%$ & $0.80 \pm 0.07$\\   \hline
+    Hands-small & \textit{left}, \textit{right} & CQ, norm., drop chs. & CNN D* &  $91.0 \pm 3.3 \%$ & $0.82 \pm 0.07$\\   \hline
+    Hands-small & \textit{left}, \textit{right} & all & CNN D* &   $92.0 \pm 5.1 \%$ & $0.84 \pm 0.10$\\   \hline
+\end{tabular}
+}
+\caption{Performace of the CNN's \textbf{C} and \textbf{D*} (definitions \vpageref{itemize:1dCNNs}). Preprocessing `all' means: apply ICA,  CQ weighing, normalisation, drop channels and drop noisy examples (maximum value above $100 \mu V$). See table \ref{tab:hands-cnn-app} for all trained networks (also with $MCC < 0.10$).}
+\label{tab:hands-cnn-results}
+\end{table}

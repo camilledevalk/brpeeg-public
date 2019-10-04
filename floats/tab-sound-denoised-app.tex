@@ -1,0 +1,67 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} & \textbf{$[t_{min}, t_{max}]$ ($s$)}        & \textbf{Preprocessing}                       & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\    
+    \hline \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Bayes                 &  $51.3 \pm 2.1\%$     & $0.04 \pm 0.07$\\  
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Percp. A              &  $51.4 \pm 3.8\%$     & $0.03 \pm 0.08$\\   
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Percp. B              &  $49.3 \pm 1.9\%$     & $-0.01 \pm 0.04$\\  
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN C                 &  $51.6 \pm 3.2\%$     & $0.03 \pm 0.06$\\   
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN D*                &  $51.7 \pm 4.1\%$     & $0.03 \pm 0.08$\\  
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN E                 &  $52.3 \pm 2.2\%$     & $0.05 \pm 0.04$\\  
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN F*                &  $49.3 \pm 1.7\%$     & $-0.01 \pm 0.03$\\ 
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Bayes                 &  $51.4 \pm 1.6\%$     & $0.04 \pm 0.05$\\   
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Percp. A              &  $51.4 \pm 3.6\%$     & $0.03 \pm 0.07$\\ 
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Percp. B              &  $48.7 \pm 4.8\%$     & $-0.03 \pm 0.1$\\  
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN C                 &  $49.7 \pm 2.7\%$     & $-0.01 \pm 0.05$\\ 
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN D                 &  $50.2 \pm 3.0\%$     & $0.0 \pm 0.06$\\   
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN E                 &  $52.2 \pm 4.9\%$     & $0.04 \pm 0.1$\\   
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN F                 &  $51.3 \pm 3.5\%$     & $0.03 \pm 0.07$\\  
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, denoised}      & Bayes                 &  $51.4 \pm 6.4\%$     & $0.02 \pm 0.19$\\ 
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, denoised}      & Percp. A              &  $48.3 \pm 11.0\%$    & $-0.03 \pm 0.22$\\ 
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, denoised}      & Percp. B              &  $48.1 \pm 7.0\%$     & $-0.04 \pm 0.14$\\  
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, denoised}      & CNN C                 &  $53.6 \pm 8.6\%$     & $0.07 \pm 0.17$\\  
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, denoised}      & CNN D                 &  $51.5 \pm 9.2\%$     & $0.03 \pm 0.18$\\   
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, denoised}      & CNN E                 &  $49.0 \pm 7.9\%$     & $-0.02 \pm 0.16$\\ 
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, denoised}      & CNN F                 &  $53.1 \pm 11.5\%$    & $0.06 \pm 0.23$\\   
+    \hline
+    Beeps               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Bayes                 &  $48.3 \pm 3.7\%$     & $-0.06 \pm 0.11$\\  
+    \hline
+    Beeps               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Percp. A              &  $48.6 \pm 5.0\%$     & $-0.03 \pm 0.1$\\    
+    \hline
+    Beeps               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & Percp. B              &  $48.5 \pm 4.1\%$     & $-0.03 \pm 0.08$\\  
+    \hline
+    Beeps               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN C                 &  $48.5 \pm 7.5\%$     & $-0.03 \pm 0.15$\\  
+    \hline
+    Beeps               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN D                 &  $54.4 \pm 6.7\%$     & $0.09 \pm 0.13$\\  
+    \hline
+    Beeps               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN E                 &  $48.0 \pm 5.6\%$     & $-0.04 \pm 0.11$\\ 
+    \hline
+    Beeps               & [0,2]                                         & \scriptsize{CQ, norm., ICA, denoised}      & CNN F                 &  $49.9 \pm 8.1\%$     & $-0.0 \pm 0.16$\\  
+    \hline
+\end{tabular}
+}
+\caption{Denoised by an auto encoder}
+\label{tab:sound-denoised-app}
+\end{table}

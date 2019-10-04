@@ -1,0 +1,77 @@
+\begin{comment}
+%sorted
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} &  \textbf{Classes}                             & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\     
+    \hline \hline
+    Hands-small         & \textit{left}, \textit{right}                 & + ICA                     & Percp. B              &   $93.2 \pm 3.2 \%$   & $0.86 \pm 0.06$\\  
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & + ICA                     & Percp. A              &   $92.7 \pm 3.0 \%$   & $0.85 \pm 0.06$\\  
+    \hline
+    Hands-small         & \textit{left}, \textit{right}                 & + ICA                     & Bayes                 &   $89.6 \pm 7.7 \%$   & $0.79 \pm 0.15$\\  
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & Bayes                 &   $34.1 \pm 3.3 \%$   & $0.02 \pm 0.06$\\  
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & + ICA                     & Percp. B              &   $51.0 \pm 2.1 \%$   & $0.02 \pm 0.04$\\  
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & Percp. B              &   $33.8 \pm 0.1 \%$   & $0.0 \pm 0.0$\\    
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & + ICA                     & Percp. B              &   $50.1 \pm 3.2 \%$   & $0.0 \pm 0.06$\\   
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & + ICA                     & Percp. A              &   $50.0 \pm 1.4 \%$   & $-0.0 \pm 0.03$\\   
+    \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & Percp. A              &   $34.0 \pm 2.1 \%$   & $-0.0 \pm 0.03$\\   
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & + ICA                     & Bayes                 &   $49.4 \pm 2.7 \%$   & $-0.01 \pm 0.06$\\  
+    \hline
+    Hands               & \textit{left}, \textit{right}                 & + ICA                     & Percp. A              &   $48.8 \pm 4.4 \%$   & $-0.02 \pm 0.09$\\ 
+    \hline
+    Hands               & \textit{move}, \textit{blank}                 & + ICA                     & Bayes                 &   $48.6 \pm 2.2 \%$   & $-0.03 \pm 0.05$\\  
+    \hline
+\end{tabular}
+}
+\caption{The difference between the normal previous form of preprocessing and all preprocessing techniques: \textsc{+ICA \& reject} means that ICA and dropping noisy examples (maximum value above $100 \mu V$), but also CQ weighing, normalisation and dropping channels is applied.}
+\label{tab:hands-ica-app}
+\end{table}
+\end{comment}
+
+
+
+
+
+%unsorted
+\begin{table}[h]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} &  \textbf{Classes}                             & \textbf{Preprocessing}    & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\        \hline \hline
+    %Hands              & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Bayes                 &   33\%                & -0.01\\               \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & Bayes                 &   $34.1 \pm 3.3 \%$   & $0.02 \pm 0.06$\\     \hline
+    %Hands              & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Bayes                 &  55\%                 & 0.1\\                 \hline
+    Hands               & \textit{left}, \textit{right}                 & + ICA                     & Bayes                 &   $49.4 \pm 2.7 \%$   & $-0.01 \pm 0.06$\\    \hline
+    %Hands-small        & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Bayes                 &  55\%                 & 0.1\\                 \hline
+    Hands-small         & \textit{left}, \textit{right}                 & + ICA                     & Bayes                 &   $89.6 \pm 7.7 \%$   & $0.79 \pm 0.15$\\     \hline
+    %Hands              & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Bayes                 &  50\%                 & 0.0\\                 \hline
+    Hands               & \textit{move}, \textit{blank}                 & + ICA                     & Bayes                 &   $48.6 \pm 2.2 \%$   & $-0.03 \pm 0.05$\\    \hline
+    %Hands              & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Percp. A              &   31\%                &  0.0\\                \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & Percp. A              &  $34.0 \pm 2.1 \%$    & $-0.0 \pm 0.03$\\     \hline
+    %Hands              & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. A              &  52\%                 & 0.05\\                \hline
+    Hands               & \textit{left}, \textit{right}                 & + ICA                     & Percp. A              &   $48.8 \pm 4.4 \%$   & $-0.02 \pm 0.09$\\    \hline
+    %Hands-small        & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. A              &  52\%                 & 0.05\\                \hline
+    Hands-small         & \textit{left}, \textit{right}                 & + ICA                     & Percp. A              &   $92.7 \pm 3.0 \%$   & $0.85 \pm 0.06$\\     \hline
+    %Hands              & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Percp. A              &  50\%                 & 0.0\\                 \hline
+    Hands               & \textit{move}, \textit{blank}                 & + ICA                     & Percp. A              &  $50.0 \pm 1.4 \%$    & $-0.0 \pm 0.03$\\     \hline
+    %Hands              & \textit{left}, \textit{right}, \textit{blank} & CQ, norm., drop chs.      & Percp. B              &  31 \%                & 0.0\\                 \hline
+    Hands               & \textit{left}, \textit{right}, \textit{blank} & + ICA                     & Percp. B              &  $33.8 \pm 0.1 \%$    & $0.0 \pm 0.0$\\       \hline
+    %Hands              & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. B              &  50\%                 & 0.0\\                 \hline
+    Hands               & \textit{left}, \textit{right}                 & + ICA                     & Percp. B              &  $50.1 \pm 3.2 \%$    & $0.0 \pm 0.06$\\      \hline
+    %Hands-small        & \textit{left}, \textit{right}                 & CQ, norm., drop chs.      & Percp. B              &  50\%                 & 0.0\\                 \hline
+    Hands-small         & \textit{left}, \textit{right}                 & + ICA                     & Percp. B              &  $93.2 \pm 3.2 \%$    & $0.86 \pm 0.06$\\     \hline
+    %Hands              & \textit{move}, \textit{blank}                 & CQ, norm., drop chs.      & Percp. B              & 52 \%                 & 0.04\\                \hline
+    Hands               & \textit{move}, \textit{blank}                 & + ICA                     & Percp. B              & $51.0 \pm 2.1 \%$     &  $0.02 \pm 0.04$\\    \hline
+\end{tabular}
+}
+\caption{The difference between the normal previous form of preprocessing and the ICA preprocessing technique: \textsc{+ICA} means that ICA, but also CQ weighing, normalisation and dropping channels is applied.}\label{tab:hands-ica-app}
+\end{table}

@@ -1,0 +1,53 @@
+\begin{table}[!htb]
+\centering
+\footnotesize{
+\begin{tabular}{c|c|c|c|c|c}
+    \textbf{Experiment} & \textbf{$[t_{min}, t_{max}]$ ($s$)}        & \textbf{Preprocessing}                       & \textbf{Classifier}   & \textbf{Accuracy}     & \textbf{MCC}\\    
+    \hline \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& Bayes                 &  $47.91 \pm 3.68\%$   & $-0.06 \pm 0.09$\\ 
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& Percp. A              &  $49.83 \pm 0.93\%$   & $0.0 \pm 0.02$\\   
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& Percp. B              &  $49.49 \pm 0.88\%$   & $-0.01 \pm 0.02$\\ 
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN C                 &  $50.09 \pm 0.81\%$   & $0.0 \pm 0.02$\\   
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN D*                &  $49.39 \pm 0.55\%$   & $-0.01 \pm 0.01$\\ 
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN E                 &  $49.66 \pm 0.96\%$   & $-0.01 \pm 0.02$\\  
+    \hline
+    Music               & [0,1]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN F*                &  $49.74 \pm 0.86\%$   & $-0.01 \pm 0.02$\\  
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& Bayes                 &  $42.89 \pm 4.46\%$   & $-0.18 \pm 0.1$\\   
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& Percp. A              &  $50.46 \pm 0.91\%$   & $0.01 \pm 0.02$\\  
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& Percp. B              &  $49.09 \pm 1.12\%$   & $-0.02 \pm 0.02$\\  
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN C                 &  $49.55 \pm 0.91\%$   & $-0.01 \pm 0.02$\\  
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN D                 &  $49.52 \pm 1.36\%$   & $-0.01 \pm 0.03$\\ 
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN E                 &  $50.46 \pm 1.33\%$   & $0.01 \pm 0.03$\\   
+    \hline
+    Music               & [0,2]                                         & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN F                 &  $49.98 \pm 1.02\%$   & $0.0 \pm 0.02$\\ 
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, reject, filtr.}& Bayes                 &  $28.33 \pm 23.63\%$  & $-0.45 \pm 0.47$\\  
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, reject, filtr.}& Percp. A              &  $48.33 \pm 5.0\%$    & $-0.03 \pm 0.1$\\   
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, reject, filtr.}& Percp. B              &  $53.33 \pm 6.67\%$   & $0.07 \pm 0.13$\\   
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN C                 &  $48.33 \pm 5.0\%$    & $-0.03 \pm 0.1$\\   
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN D                 &  $51.67 \pm 5.0\%$    & $0.03 \pm 0.1$\\    
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN E                 &  $53.33 \pm 6.67\%$   & $0.07 \pm 0.13$\\ 
+    \hline
+    Music               & [0,10]                                        & \scriptsize{CQ, norm., ICA, reject, filtr.}& CNN F                 &  $51.67 \pm 5.0\%$    & $0.03 \pm 0.1$\\  
+    \hline
+    \end{tabular}
+}
+\caption{Filtered by an adaptive filter trained on an auto encoder}
+\label{tab:sound-filtered+reject-app}
+\end{table}
